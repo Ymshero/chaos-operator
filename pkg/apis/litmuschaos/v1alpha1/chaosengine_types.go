@@ -226,6 +226,9 @@ type CmdProbeInputs struct {
 	// The source where we have to run the command
 	// It can be a image or inline(inside experiment itself)
 	Source string `json:"source,omitempty"`
+	// It can be used to enable the hostnetwork by default it is disabled.
+        HostNetwork bool `json:"hostnetwork,omitempty"`
+
 }
 
 //PromProbeInputs contains all the inputs required for prometheus probe
