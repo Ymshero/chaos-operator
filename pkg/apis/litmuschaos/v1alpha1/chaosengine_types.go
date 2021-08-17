@@ -226,6 +226,8 @@ type CmdProbeInputs struct {
 	// The source where we have to run the command
 	// It will run in inline(inside experiment itself) mode if source is nil
 	Source SourceDetails `json:"source,omitempty"`
+	// It can be used to enable the hostnetwork by default it is disabled.
+        HostNetwork bool `json:"hostnetwork,omitempty"`
 }
 
 // SourceDetails contains source details of the cmdProbe
